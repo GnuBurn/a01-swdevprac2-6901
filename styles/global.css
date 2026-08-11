@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #8fa0d8, #0b0829);
+}
+
+h1 {
+  color: #ff8400;
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px;
+  border: 2px solid #000000;
+}
+
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 6px;
+  border: 2px solid #000000;
+}
+
+#linkToBooking a {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+
+  padding: 12px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:large;
+  font-weight: 900;
+  color:#019101;
+  background-color:aqua;
+}
+
+#studentBottomRight {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: large;
+}

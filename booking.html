@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+</head>
+<body>
+  <h1>
+    Booking A Session
+  </h1>
+  <p>
+    Reserve your seat for a workout session here!
+  </p>
+  <label for="form_personalInfo">Personal Information</label>
+  <form id="form_personalInfo">
+    <input type="text" placeholder="name">
+    <input type="text" placeholder="tel">
+    <input type="text" placeholder="email">
+    <input type="number" placeholder="age">
+  </form>
+  <label id="form_reservation">Class Reservation</label>
+  <form>
+    <label for="list_workouts">Choose a workout session:</label>
+    <select id="list_workouts" name="Workout Session" size ="1">
+      <option value="boxing">Boxing</option>
+      <option value="yoga">Yoga</option>
+      <option value="swimming">Swimming</option>
+      <option value="zumba">Zumba</option>
+    </select>
+    <input type="date" placeholder="date">
+    <label for="list_time">Choose a period</label>
+    <select id="list_time" name="Workout Session" size ="1">
+      <option>09:00–10:30</option>
+      <option>10:30–12:00</option>
+      <option>13:00–14:30</option>
+      <option>16:00–17:30</option>
+    </select>
+  </form>
+</body>
+</html>
