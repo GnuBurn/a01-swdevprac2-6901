@@ -1,61 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  padding: 0;
   min-height: 100vh;
+  color: #f3f0cc;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-image: linear-gradient(to bottom, #8fa0d8, #0b0829);
 }
 
+.index-page {
+  padding: 0 20px 100px;
+}
+
+.index-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.booking-page {
+  padding: 0 20px 100px;
+}
+
+.booking-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
 h1 {
-  color: #ff8400;
+  margin: 0 0 12px;
+  color: #f3f0cc;
   text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.index-subtitle {
+  margin: 0 0 30px;
+  color: #f3f0cc;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.subheading {
+  margin: 0 0 30px;
+  color: #f3f0cc;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+.class-table-section {
+  overflow-x: auto;
+}
+
+.class-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.class-table img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.booking-section {
+  margin: 0 0 24px;
+}
+
+.section-title {
+  display: block;
+  margin-bottom: 12px;
+  color: #f3f0cc;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.booking-form {
+  padding: 24px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  flex: 1;
+  color: #f3f0cc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  max-width: 360px;
+  min-width: min(100%, 300px);
+  height: 40px;
+  border-radius: 12px;
+  border: 2px solid #ff8400;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="date"] {
+  padding: 6px 12px;
+}
+
+.form-group input::placeholder {
+  color: #908b7a;
+}
+
+.form-group.radio-group,
+.form-group.textarea-group,
+.form-group.checkbox-group {
+  align-items: flex-start;
+}
+
+.form-group.radio-group {
+  display: block;
+}
+
+.form-group.radio-group .field-label {
+  display: block;
+  margin-bottom: 12px;
+  color: #f3f0cc;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-options .radio-label {
+  display: inline;
+  align-items: center;
+  gap: 0px;
+  color: #f3f0cc;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.radio-options input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  accent-color: #ff8400;
+}
+
+.textarea-group {
+  display: block;
+}
+
+.textarea-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.textarea-group textarea {
+  width: 100%;
+  min-height: 140px;
+  resize: vertical;
+  border-radius: 12px;
+  border: 2px solid #ff8400;
+  padding: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0b0829;
+}
+
+.checkbox-group {
+  display: block;
+}
+
+.confirm-label {
+  display: inline;
+  align-items: flex-start;
+  gap: 12px;
+  color: #f3f0cc;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.confirm-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  accent-color: #ff8400;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.submit-button {
+  display: inline-block;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 10px;
+  background: #ff8400;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #e67300;
+  transform: translateY(-2px);
+}
+
+.table-wrap {
+  overflow-x: auto;
 }
 
 table {
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
+  width: 75%;
 }
 
 th {
   text-align: center;
   vertical-align: middle;
   padding: 6px;
-  border: 2px solid #000000;
+  border: 2px solid #ff8400;
+  background: #1f1e1e;
 }
 
 td {
   text-align: center;
   vertical-align: middle;
   padding: 6px;
-  border: 2px solid #000000;
+  border: 2px solid #ff8400;
+  background: #1f1e1e;
 }
 
 #linkToBooking a {
   display: block;
   width: fit-content;
   margin: 20px auto;
-
   padding: 12px;
   text-align: center;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size:large;
+  font-size: large;
   font-weight: 900;
-  color:#019101;
-  background-color:aqua;
+  color: #019101;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#studentBottomCenter {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
 #studentBottomRight {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.student-identification {
   z-index: 1000;
-  
   background-color: #ffffff;
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   font-size: large;
+  color: #0b0829;
+}
+
+@media (max-width: 720px) {
+  .booking-container {
+    padding-top: 24px;
+  }
+
+  .booking-form {
+    padding: 16px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group select {
+    flex: none;
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+  }
+
+  .student-identification {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
 }
